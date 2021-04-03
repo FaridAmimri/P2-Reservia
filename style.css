@@ -1,0 +1,83 @@
+/* Eléments généraux de la page */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 900px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+h3, h4 {
+    font-style: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Header */
+
+header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h3 {
+    padding-bottom: -90%;
+}
+nav li {
+    width: 120%;
+    margin-right: 40px ;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 0.8em;
+    color: #181818;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+}
+
+nav span {
+    color: #0065FC;
+}
+
+/* Section */
+
+#logo_localisation {
+    display: flex;
+    height: 3%;
+    width: 3%;
+}
+
+#logo_localisation img {
+    background: #F2F2F2;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+}
+
+#logo_localisation input {
+    color: black;
+    padding: 9px;
+    border-style: none;
+}
+
+#logo_localisation button {
+    background: #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 9px;
+    border-style: none;
+}
+
+
