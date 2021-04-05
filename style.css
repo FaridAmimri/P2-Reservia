@@ -10,11 +10,9 @@ ul {
     list-style-type: none;
     display: flex;
 }
-
 h3, h4 {
     font-style: bold;
 }
-
 .clear {
     clear: both;
 }
@@ -26,7 +24,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 header h3 {
     padding-bottom: -90%;
 }
@@ -35,49 +32,68 @@ nav li {
     margin-right: 40px ;
     font-weight: bold;
 }
-
 nav a {
     font-size: 0.8em;
     color: #181818;
     text-decoration: none;
     padding-top: 20px;
 }
-
 nav a:hover {
     color: #0065FC;
     border-top: 1px solid #0065FC;
 }
-
 nav span {
     color: #0065FC;
 }
 
 /* Section */
 
-#logo_localisation {
+#localisation {
     display: flex;
-    height: 3%;
-    width: 3%;
+    height: 2%;
+    width: 2%;
 }
-
-#logo_localisation img {
+#localisation i {
     background: #F2F2F2;
-    padding: 9px;
     border-radius: 10px 0 0 10px;
+    padding: 9px;
 }
-
-#logo_localisation input {
+#localisation input {
     color: black;
     padding: 9px;
     border-style: none;
 }
-
-#logo_localisation button {
+#localisation button {
+    width: 120px;
     background: #0065FC;
     color: white;
     border-radius: 0 10px 10px 0;
     padding: 9px;
     border-style: none;
+}
+#filtres {
+    display: flex;
+    margin-top: 20px;
+    align-items: baseline;
+}
+#filtres i {
+    align-content: right;
+    padding: 9px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    color:#0065FC;
+    background: rgba(0,101,252,0.15);
+}
+#filtres button {
+    margin-left: 10px;
+    padding: 9px;
+    background: white;
+    border-radius: 0 100px 100px 0;
+    border-color: #F2F2F2;
+}
+.flt {
+    
 }
 
 
