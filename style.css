@@ -73,27 +73,30 @@ nav span {
 }
 #filtres {
     display: flex;
-    margin-top: 20px;
     align-items: baseline;
+    margin-top: 10px;
+}
+.filterbox {
+    position: relative;
+}
+#filtres h4 {
+    margin-right: 20px;
 }
 #filtres i {
-    align-content: right;
-    padding: 9px;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    position: absolute;
+    padding: 7px;
+    border-radius: 100%;
     color:#0065FC;
     background: rgba(0,101,252,0.15);
 }
 #filtres button {
-    margin-left: 10px;
-    padding: 9px;
+    margin-right: 20px;
+    padding: 6px 15px;
     background: white;
     border-radius: 0 100px 100px 0;
     border-color: #F2F2F2;
 }
-.flt {
-    
-}
+
+
 
 
