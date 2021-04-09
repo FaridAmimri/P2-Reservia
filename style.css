@@ -1,15 +1,14 @@
 /* Eléments généraux de la page */
+
 :root {
     --bluecolor : #0065FC;
     --greycolor : #F2F2F2;
 }
-
 body {
     font-family: 'Raleway', sans-serif;
     width: 900px;
     margin: auto;
 }
-
 ul {
     list-style-type: none;
     display: flex;
@@ -19,6 +18,12 @@ h3, h4 {
 }
 .clear {
     clear: both;
+}
+.overlay1 p, .overlay2 p {
+    font-size: 0.7em;
+}
+.overlay3 p, .overlay4 p, .overlay5 p, .overlay6 p, .overlay7 p, .overlay8 p {
+    font-size: 0.9em;
 }
 
 /* Header */
@@ -117,7 +122,7 @@ section {
     display: flex;
     margin: 30px 0;
 }
-#container {
+#container1 {
     background: var(--greycolor);
     width: 560px;
     height: 420px;
@@ -130,10 +135,10 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#container article {
-    margin-bottom: 20px;
+#container1 article {
     object-fit: cover;
     position: relative;
+    margin-bottom: 20px;
     width: 160px;
     height: 130px;
     border-radius: 10px;
@@ -153,10 +158,6 @@ section {
     bottom: 0;
     padding: 0px 8px;
     box-sizing: border-box;
-    
-}
-.overlay1 p {
-    font-size: 0.7em;
 }
 aside {
     background: var(--greycolor);
@@ -166,9 +167,8 @@ aside {
     padding: 10px 20px;
 }
 aside article {
-    margin-bottom: 15px;
-   
     position: relative;
+    margin-bottom: 15px;
     width: 250px;
     height: 100px;
     border-radius: 10px;
@@ -190,10 +190,154 @@ aside article {
     padding: 0px 8px;
     box-sizing: border-box;
 }
-.overlay2 p {
-    font-size: 0.7em;
+
+/* Aside */
+
+#container2 {
+    width: 900px;
+    height: 500px;
 }
-
-
-
-
+#activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.img3 {
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid var(--greycolor);
+}
+.images3 {
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.overlay3 {
+    position: absolute;
+    background: rgba(255,255,255,1);
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+.img4 {
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid var(--greycolor);
+}
+.images4 {
+    object-fit: cover;
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+}
+.overlay4 {
+    position: absolute;
+    background: rgba(255,255,255,1);
+    height: 25%;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+.img5 {
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid var(--greycolor);
+}
+.images5 {
+    object-fit: cover;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+}
+.overlay5 {
+    position: absolute;
+    background: rgba(255,255,255,1);
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+.img6 {
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid var(--greycolor);
+}
+.images6 {
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.overlay6 {
+    position: absolute;
+    background: rgba(255,255,255,1);
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+.img7 {
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 140px;
+    border-radius: 10px;
+    border: 2px solid var(--greycolor);
+}
+.images7 {
+    object-fit: cover;
+    width: 200px;
+    height: 140px;
+    border-radius: 10px;
+}
+.overlay7 {
+    position: absolute;
+    background: rgba(255,255,255,1);
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+.img8 {
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px solid var(--greycolor);
+}
+.images8 {
+    object-fit: cover;
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
+}
+.overlay8 {
+    position: absolute;
+    background: rgba(255,255,255,1);
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
