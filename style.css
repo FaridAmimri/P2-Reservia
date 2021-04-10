@@ -13,11 +13,9 @@ ul {
     list-style-type: none;
     display: flex;
 }
-h3, h4 {
-    font-style: bold;
-}
-.clear {
-    clear: both;
+h3 {
+    font-weight: 1200px;
+    font-size: 0.9em;
 }
 .overlay1 p, .overlay2 p {
     font-size: 0.7em;
@@ -29,6 +27,7 @@ h3, h4 {
 /* Header */
 
 header {
+    width: 900px;
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -120,6 +119,7 @@ p i{
 
 section {
     display: flex;
+    width: 880px;
     margin: 30px 0;
 }
 #container1 {
@@ -195,13 +195,15 @@ aside article {
 
 #container2 {
     width: 900px;
-    height: 500px;
+    height: 350px;
+    margin-bottom: 20px;
 }
 #activites {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    height: 300px;
 }
 .img3 {
     position: relative;
@@ -214,7 +216,7 @@ aside article {
 .images3 {
     object-fit: cover;
     width: 200px;
-    height: 300px;
+    height: 290px;
     border-radius: 10px;
 }
 .overlay3 {
@@ -283,7 +285,7 @@ aside article {
 .images6 {
     object-fit: cover;
     width: 200px;
-    height: 300px;
+    height: 290px;
     border-radius: 10px;
 }
 .overlay6 {
@@ -340,4 +342,28 @@ aside article {
     bottom: 0;
     padding: 0px 8px;
     box-sizing: border-box;
+}
+
+/* Footer */
+
+footer {
+    background: var(--greycolor);
+    height: 130px;
+    margin-bottom: 40px;
+}
+#contact {
+    display: flex;
+}
+footer h4 {
+    margin: 30px 0 10px 30px;
+    font-size: 0.8em;
+}
+footer li {
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    font-size: 0.8em;
+}
+.liens {
+    width: 30%;
+    text-decoration: none;
 }
