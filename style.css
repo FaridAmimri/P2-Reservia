@@ -87,7 +87,7 @@ nav span {
 .filterbox {
     position: relative;
 }
-#filtres h4 {
+#filtres h3 {
     margin-right: 20px;
 }
 #filtres i {
@@ -98,7 +98,7 @@ nav span {
     padding: 8px;
     border-radius: 100%;
     color: var(--bluecolor);
-    background: rgba(0,101,252,0.15);
+    background:#DEEBFF;
 }
 #filtres button {
     margin-right: 20px;
@@ -106,6 +106,9 @@ nav span {
     background: transparent;
     border-radius: 100px;
     border: 2px solid var(--greycolor);
+}
+#filtres button:hover {
+    background-color: #DEEBFF;
 }
 .filterbox span {
     margin-left: 20px;
@@ -115,7 +118,7 @@ p i{
     color: var(--bluecolor);
 }
 
-/* Section */
+/* Container1 */
 
 section {
     display: flex;
@@ -142,7 +145,7 @@ section {
     width: 160px;
     height: 130px;
     border-radius: 10px;
-    border: 4px solid white;
+    border: 3px solid white;
 }
 .images1 {
     object-fit: cover;
@@ -174,6 +177,11 @@ aside article {
     border-radius: 10px;
     border: 4px solid white;
 }
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .images2 {
     object-fit: cover;
     width: 250px;
@@ -191,7 +199,7 @@ aside article {
     box-sizing: border-box;
 }
 
-/* Aside */
+/* Container2 */
 
 #container2 {
     width: 900px;
@@ -348,7 +356,7 @@ aside article {
 
 footer {
     background: var(--greycolor);
-    height: 130px;
+    height: 140px;
     margin-bottom: 40px;
 }
 #contact {
@@ -358,10 +366,17 @@ footer h4 {
     margin: 30px 0 10px 30px;
     font-size: 0.8em;
 }
+footer ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 footer li {
     list-style-type: none;
     margin: 0 0 0 30px;
     font-size: 0.8em;
+    line-height: 1.5;
 }
 .liens {
     width: 30%;
