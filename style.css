@@ -128,6 +128,7 @@ p i{
     margin-right: 5px;
     color: var(--bluecolor);
 }
+i.fas.fa-search {display:none;}
 
 /* Section & Aside */
 
@@ -425,9 +426,42 @@ footer li {
 /* Propriétés responsive si la fenêtre fait au plus 768px - Smartphones */
 
 @media screen and (max-width : 768px) {
-    body {width: auto; margin :auto;}
-    header {width: auto;}
+
+     /* Header */
+
+    body {width: auto; margin :auto; width: 85%;}
+    header {width: auto; flex-direction: column;}
+    header h3 {width: auto; font-size: 1.1em; padding: 5% 0 0 0; margin-bottom: auto;}
+    header p {margin: 1% 0 3% 0;}
+    nav {position: absolute; top: 12%; font-size: 1.2em;}
+    nav ul {padding-left: 5%; border-bottom: 2px solid var(--greycolor); line-height: -3%; padding-bottom: 1%;}
+    nav ul a {width: 50%; padding-bottom: 1%;}
+    nav span {position: absolute; top: -25%; right: -30%;}
+    nav a:hover {color:var(--bluecolor); border-bottom: 2px solid var(--bluecolor); border-top: none; padding-bottom: 7%;}
+    
+     /* Form */
+    
+    form {width: 100%;}
+    #localisation {width: 100%;}
+    #localisation button {display: none;}
+    i.fas.fa-search {display:table; color:var(--bluecolor); border-radius: 10px; }
+    #filtres {height: auto; flex-wrap: wrap;}
+
+    /* Section & Aside */
+
+    section {display: inline-block ; width: 100%; height: auto; margin: 0;}
+    #container1 {width: auto; height: auto;}
+    #hebergements {width: 100% ; flex-direction: column;}
+    #container1 article {width: 100%; height: 150px;}
+    .images1 {width: 100% ; height: 65%; border-radius: 10px 10px 0 0;}
+    .overlay1 {width: 100%; height: 35%;}
+    .overlay1 p {font-size: 0.7em; margin: 2%;} 
+    aside {flex-direction: column; width: 90%; height: auto; padding: 10px 20px}
+    aside article {width: 100%; height: 150px;}
+    .images2 {width: 55% ; height: 100%;}
+    .overlay2 {width: 50%; height: 100%;}
+    .overlay2 p {font-size: 0.7em; margin: 4%;}
+
+
 }
 
-
-    
