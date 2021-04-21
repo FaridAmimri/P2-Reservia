@@ -14,48 +14,39 @@
 
 <body>
     <header>
-        <div id="titre_principal">
-            <div id="logo">
-                <img src="images/logo/Reservia.svg" alt="logo Reservia">
-                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-                <p><small>En plein centre ville ou en pleine nature</small></p>
-            </div>
+        <div id="logo">
+            <img src="images/logo/Reservia.svg" alt="logo Reservia">
+        </div>
+        <div id="inscription">
+            <li><a href="#">S'inscrire</a></li>
         </div>
         <nav>
-            <ul>
-                <li><a href="#hebergements">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
-                <li><a href="#"><span>S'inscrire</span></a></li>
-            </ul>
+            <li><a href="#hebergements">Hébergements</a></li>
+            <li><a href="#activites">Activités</a></li>
         </nav>
     </header>
+    
 
     <form method="post" action="traitement.php">
+        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+        <p>En plein centre ville ou en pleine nature</p>
         <div id="localisation">
             <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="city" placeholder="Ville">
+            <input type="search" name="city" placeholder="Marseille, France">
             <button type="submit">Rechercher</button><i class="fas fa-search"></i>
         </div>
         <div id="filtres">
             <h3>Filtres</h3>
-            <div class="filterbox">
                 <button class="button" onclick="filterSelection('Economique')">
-                    <i class="fas fa-money-bill-wave"></i><span><b>Économique</b></span></button>
-            </div>
-            <div class="filterbox">
+                <i class="fas fa-money-bill-wave"></i><span><b>Économique</b></span></button>
                 <button class="button" onclick="filterSelection('Familial')">
-                    <i class="fas fa-child"></i><span><b>Familial</b></span></button>
-            </div>
-            <div class="filterbox">
+                <i class="fas fa-child"></i><span><b>Familial</b></span></button>
                 <button class="button" onclick="filterSelection('Romantique')">
-                    <i class="fas fa-heart"></i><span><b>Romantique</b></span></button>
-            </div>
-            <div class="filterbox">
+                <i class="fas fa-heart"></i><span><b>Romantique</b></span></button>
                 <button class="button" onclick="filterSelection('Animaux')">
-                    <i class="fas fa-dog"></i><span><b>Animaux autorisés</b></span></button>
-            </div>
+                <i class="fas fa-dog"></i><span><b>Animaux autorisés</b></span></button>
         </div>
-        <p><i class="fas fa-info-circle"></i><small>Plus de 500 logements sont disponibles dans cette ville</small></p>
+        <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </form>
 
     <section>
@@ -98,7 +89,7 @@
                         <p><b>Hôtel chez Amina</b><br><small>Nuit à partir de <b>96€</b><br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></small></p>
                     </div>
                 </article>
-                <p><small><b>Afficher plus</b></small></p>
+                <p><b>Afficher plus</b></p>
             </div>
         </div>
         <aside>
@@ -130,37 +121,37 @@
         <h3>Activités à Marseille</h3>
         <div id="activites">
             <article class="img3">
-                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="images3" alt="chambre">
+                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="cover3" alt="chambre">
                 <div class="overlay3">
                     <p><small><b>Vieux Port</b></small></p>
                 </div>
             </article>
             <article class="img4">
-                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="images4" alt="chambre">
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="cover3" alt="chambre">
                 <div class="overlay3">
                     <p><small><b>Fort de Pomègues</b></small></p>
                 </div>
             </article>
             <article class="img5">
-                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="images5" alt="chambre">
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="cover3" alt="chambre">
                 <div class="overlay3">
                     <p><small><b>Île du Frioul</b></small></p>
                 </div>
             </article>
             <article class="img6">
-                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="images6" alt="chambre">
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="cover3" alt="chambre">
                 <div class="overlay3">
                     <p><small><b>Parc National des Calanques</b></small></p>
                 </div>
             </article>
             <article class="img7">
-                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="images7" alt="chambre">
+                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="cover3" alt="chambre">
                 <div class="overlay3">
                     <p><small><b>Notre-Dame-de-la-Garde</b></small></p>
                 </div>
             </article>
             <article class="img8">
-                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="images8" alt="chambre">
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="cover3" alt="chambre">
                 <div class="overlay3">
                     <p><small><b>Parc Longchamp</b></small></p>
                 </div>
