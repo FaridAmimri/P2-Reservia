@@ -40,7 +40,7 @@ header h3 {
     width: 100%;
 }
 #inscription {
-    margin: 20px 40px;
+    margin: 20px 0px 20px 40px;
     list-style-type: none;
     order: 3;
 }
@@ -73,7 +73,7 @@ nav a:hover {
     border-top: 1px solid var(--bluecolor);
 }
 
-/* Div Form */
+/* Form */
 
 form {
     width: 100%;
@@ -159,87 +159,89 @@ section {
     width: auto;
     margin: 30px 25px 30px 30px;
 }
-#container {
-    background: var(--greycolor);
-    width: 880px;
-    height: 600px;
-    margin-right: 40px;
-    border-radius: 10px;
-    padding: 20px;
-}
-#hebergements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#container article {
-    object-fit: cover;
-    position: relative;
-    margin-bottom: 30px;
-    width: 250px;
-    height: 195px;
-    border-radius: 10px;
-    border: 5px solid white;
-}
-.images1 {
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
-    border-radius: 10px;
-}
-.overlay1 {
-    position: absolute;
-    background: rgba(255,255,255,1);
-    height: 35%;
-    width: 100%;
-    bottom: 0;
-    padding: 0px 8px;
-    box-sizing: border-box;
-}
-.overlay1 p {
-    font-size: 0.9em;
-    margin: 5% 0;
-}
-aside {
-    background: var(--greycolor);
-    width: 380px;
-    height: 600px;
-    border-radius: 10px;
-    padding: 20px 40px;
-}
-aside article {
-    position: relative;
-    margin-bottom: 30px;
-    width: 345px;
-    height: 145px;
-    border-radius: 10px;
-    border: 5px solid white;
-}
-.chart {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.images2 {
-    object-fit: cover;
-    width: 40%;
-    height: 100%;
-    border-radius: 10px 0 0 10px;
-}
-.overlay2 {
-    position: absolute;
-    background: rgba(255,255,255,1);
-    height: 100%;
-    width: 60%;
-    bottom: 0;
-    right: 0;
-    padding: 0px 30px 0 9px;
-    box-sizing: border-box;
-}
-.overlay2 p {
-    font-size: 0.9em;
-    margin: 5%;
-}
+
+    /* Container : "Hébergements à Marseille */
+    #container {
+        background: var(--greycolor);
+        width: 880px;
+        height: 600px;
+        margin-right: 40px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    #hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #container article {
+        object-fit: cover;
+        position: relative;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 195px;
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    .images1 {
+        object-fit: cover;
+        width: 100%;
+        height: 70%;
+        border-radius: 10px;
+    }
+    .overlay1 {
+        position: absolute;
+        background: rgba(255,255,255,1);
+        height: 35%;
+        width: 100%;
+        bottom: 0;
+        padding: 0px 8px;
+        box-sizing: border-box;
+    }
+    .overlay1 p {
+        margin: 4% 0;
+    }
+
+    /* Aside : "Les plus populaires" */
+    aside {
+        background: var(--greycolor);
+        width: 380px;
+        height: 600px;
+        border-radius: 10px;
+        padding: 20px 40px;
+    }
+    aside article {
+        position: relative;
+        margin-bottom: 30px;
+        width: 345px;
+        height: 145px;
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    .chart {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .images2 {
+        object-fit: cover;
+        width: 40%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    .overlay2 {
+        position: absolute;
+        background: rgba(255,255,255,1);
+        height: 100%;
+        width: 60%;
+        bottom: 0;
+        right: 0;
+        padding: 0px 30px 0 9px;
+        box-sizing: border-box;
+    }
+    .overlay2 p {
+        margin: 5%;
+    }
 
 /* Main */
 
@@ -371,7 +373,7 @@ footer li {
 
 /* Propriétés responsive si la fenêtre fait au plus 1024px - Tablettes */
 
-@media screen and (max-width : 1024px) {
+@media screen and (min-width : 769px) and (max-width : 1024px) {
 
     /* Eléments généraux de la page */
     body {width: 100%; margin: auto;}
@@ -382,21 +384,22 @@ footer li {
 
     /* Form */
     form {width: 90%; margin: 20px 30px;}
+    #filtres {flex-wrap: wrap;}
     #localisation input {width: 20%;}
     #localisation button {width: 13%;}
 
     /* Section */
     section {display: inline-block; width: 90%; height: auto; margin: 20px 30px;}
 
-        /* Container */
+        /* Container : "Hébergements à Marseille" */
         #container {width: 96%; height: auto; margin: 0 0 30px 0; padding: 10px 20px;}
         #hebergements {width: 100% ; flex-wrap: wrap; justify-content: space-between;}
-        #container article {width: 45%; height: 230px; border-radius: 10px; margin: 15px;}
+        #container article {width: 43%; height: 230px; border-radius: 10px; margin: 15px;}
         .images1 {width: 100% ; height: 75%; border-radius: 10px 10px 0 0;}
         .overlay1 {width: 100%; height: 25%;}
         .overlay1 p {font-size: 0.8em; margin: 2%;}
         
-        /* Aside */
+        /* Aside : "Les plus populaires" */
         aside {flex-direction: column; width: 96%; height: auto; padding: 20px;}
         aside article {width: 95%; height: 250px; margin: 0px 20px 30px 20px;}
         .images2 {width: 70% ; height: 100%;}
@@ -407,67 +410,82 @@ footer li {
 
     main {width: 90%; height: 900px; margin: 30px;}
     #activites {width: 100%; height: 45%; flex-flow: wrap; justify-content: space-between;}
-    .img3 {width: 30%; height: 100%; margin-bottom: 5%;}
-    .images3 {width: 100%; height: 100%;}
-    .img4 {width: 30%; height: 100%; margin-bottom: 5%;}
-    .images4 {width: 100%; height: 100%;}
-    .img5 {width: 30%; height: 100%; margin-bottom: 5%;}
-    .images5 {width: 100%; height: 100%;}
-    .img6 {width: 30%; height: 100%; margin-bottom: 5%;}
-    .images6 {width: 100%; height: 100%;}
-    .img7 {width: 30%; height: 100%; margin-bottom: 5%;}
-    .images7 {width: 100%; height: 100%;}
-    .img8 {width: 30%; height: 100%; margin-bottom: 5%;}
-    .images8 {width: 100%; height: 100%;}
-    .overlay3 {width: 100%; height: 15%; text-align: center; padding: 0;}
+    #activites article {width: 30%; height: 100%; margin-bottom: 5%;}
+    .cover3 {width: 100%; height: 100%;}
+    .overlay3 {width: 100%; height: 15%; padding: 0;}
     .overlay3 p {font-size: 1.2em; margin: 5%;}
 
     /* Footer */
 
     footer {width: 100%;}
     #contact {width: 95%;}
-    .liens {text-align: center; font-size: 1.1em;}
+    .liens {text-align: center; font-size: 1em;}
 }
 
 /* Propriétés responsive si la fenêtre fait au plus 768px - Smartphones */
 
 @media screen and (max-width : 768px) {
 
+    /* Eléments généraux de la page */
+    body {width: 100%; margin: auto;}
+    h3 {font-size: 1.2em;}
+
      /* Header */
 
-    body {width: auto; margin :auto; width: 85%;}
-    header {width: auto; flex-direction: column;}
-    header h3 {width: auto; font-size: 1.1em; padding: 5% 0 0 0; margin-bottom: auto;}
-    header p {margin: 1% 0 3% 0;}
-    nav {position: absolute; top: 12%; font-size: 1.2em;}
-    nav ul {padding-left: 5%; border-bottom: 2px solid var(--greycolor); line-height: -3%; padding-bottom: 1%;}
-    nav ul a {width: 50%; padding-bottom: 1%;}
-    nav span {position: absolute; top: -25%; right: -30%;}
-    nav a:hover {color:var(--bluecolor); border-bottom: 2px solid var(--bluecolor); border-top: none; padding-bottom: 7%;}
+    header {width: auto; margin: 20px;}
+    #inscription {margin: 15px 0px 20px 40px;}
+    nav {position: absolute; align-content: space-between; width: 92%; top: 10%; font-size: 1.2em; border-bottom: 3px solid var(--greycolor); }
+    nav li {width: 50%; margin-bottom: 10px;}
+    nav a:hover {color:var(--bluecolor); border-top: none;}
     
      /* Form */
     
-    form {width: 100%;}
-    #localisation {width: 100%;}
-    #localisation button {display: none;}
-    i.fas.fa-search {display:table; color:var(--bluecolor); border-radius: 10px; }
+    form {width: 100%; height:auto; margin: 20px; padding-top: 1px;}
+    form h3 {width: 80%; margin: 45px 0 0 0;}
+    form p {width: 90%;}
+    #localisation i {padding: 18px;}
+    #localisation input {width: 235px; font-size: 1.1em; padding: 9px 0 9px 14px}
+    #localisation button {display: none; color:var(--bluecolor);}
+    #localisation #search {background: var(--bluecolor); color: white; border-radius: 10px; padding: 17px; position: absolute; left: 300px;}
+    i.fas.fa-search {display:table;}
     #filtres {height: auto; flex-wrap: wrap;}
+    #filtres h3 {margin: 10px 0; font-size: 1.2em;}
+    #filtres button {margin: 10px 5px 0 0;}
+    
 
-    /* Section & Aside */
+    /* Section */
 
-    section {display: inline-block ; width: 100%; height: auto; margin: 0;}
-    #container {width: auto; height: auto;}
-    #hebergements {width: 100% ; flex-direction: column;}
-    #container article {width: 100%; height: 150px;}
-    .images1 {width: 100% ; height: 65%; border-radius: 10px 10px 0 0;}
-    .overlay1 {width: 100%; height: 35%;}
-    .overlay1 p {font-size: 0.7em; margin: 2%;} 
-    aside {flex-direction: column; width: 90%; height: auto; padding: 10px 20px}
-    aside article {width: 100%; height: 150px;}
-    .images2 {width: 55% ; height: 100%;}
-    .overlay2 {width: 50%; height: 100%;}
-    .overlay2 p {font-size: 0.7em; margin: 4%;}
+    section {display: flex ; flex-direction: column-reverse; width: 100%; height: auto; margin: 0;}
 
+        /* Container : "Hébergements à Marseille" */
+        #container {width: auto; height: auto; background: none;}
+        #hebergements {width: 100% ; flex-direction: column;}
+        #container article {width:98%; height: 180px; margin: 0 0 15px 0; box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12);}
+        .images1 {width: 100% ; height: 65%; border-radius: 10px 10px 0 0;}
+        .overlay1 {width: 100%; height: 35%;}
+        .overlay1 p {font-size: 0.9em; margin: 2%;} 
+
+        /* Aside : "Les plus populaires" */
+        aside {flex-direction: column; width: auto; height: auto; padding: 10px 20px}
+        aside article {width: 98%; height: 145px; margin: 0 0 15px 0;}
+        .images2 {width: 40% ; height: 100%;}
+        .overlay2 {width: 60%; height: 100%; padding: 0px 20px 0 10px;}
+        .overlay2 p {font-size: 0.9em; margin: 4%;}
+
+    /* Main */
+
+    main {flex-direction: column; width: 100%; height: auto; margin: 0;}
+    #activites {width: 100%;}
+    #activites article {width: 96%; height: 145px; margin: 0 10px 20px 10px;}
+    .overlay3 {width: 100%; height: 25%; padding: 0;}
+    .overlay3 p {font-size: 1em; margin: 2% 5%;}
+    .cover3 {width: 100%; height: 80%;}
+
+    /* Footer */
+
+    footer {width: 100%;}
+    #contact {width: 95%;}
+    .liens {text-align: center; font-size: 0.7em;}
 
 }
 
