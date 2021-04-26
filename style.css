@@ -371,7 +371,7 @@ footer li {
     text-decoration: none;
 }
 
-/* Propriétés responsive si la fenêtre fait entre 769px et 1024px - Tablettes */
+/* Propriétés responsive si la fenêtre fait entre 768px et 1024px - Tablettes */
 
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 
@@ -386,6 +386,7 @@ footer li {
     /* Form */
     form {width: 90%; margin: 2px 30px;}
     #filtres {flex-wrap: wrap;}
+    #filtres button { margin: 0 20px 10px 0;}
     #localisation input {width: 30%;}
     #localisation button {width: 20%;}
 
