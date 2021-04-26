@@ -243,7 +243,7 @@ section {
         margin: 5%;
     }
 
-/* Main */
+/* Main "Activités à Marseilles" */
 
 main {
     width: auto;
@@ -371,9 +371,9 @@ footer li {
     text-decoration: none;
 }
 
-/* Propriétés responsive si la fenêtre fait au plus 1024px - Tablettes */
+/* Propriétés responsive si la fenêtre fait entre 769px et 1024px - Tablettes */
 
-@media screen and (min-width : 769px) and (max-width : 1024px) {
+@media screen and (min-width : 768px) and (max-width : 1024px) {
 
     /* Eléments généraux de la page */
     body {width: 100%; margin: auto;}
@@ -381,12 +381,13 @@ footer li {
         
     /* Header */
     header {width: 90%;}
-
+    nav {width: 92%; font-size: 1.3em;}
+    
     /* Form */
-    form {width: 90%; margin: 20px 30px;}
+    form {width: 90%; margin: 2px 30px;}
     #filtres {flex-wrap: wrap;}
-    #localisation input {width: 20%;}
-    #localisation button {width: 13%;}
+    #localisation input {width: 30%;}
+    #localisation button {width: 20%;}
 
     /* Section */
     section {display: inline-block; width: 90%; height: auto; margin: 20px 30px;}
@@ -397,34 +398,34 @@ footer li {
         #container article {width: 43%; height: 230px; border-radius: 10px; margin: 15px;}
         .images1 {width: 100% ; height: 75%; border-radius: 10px 10px 0 0;}
         .overlay1 {width: 100%; height: 25%;}
-        .overlay1 p {font-size: 0.8em; margin: 2%;}
+        .overlay1 p {font-size: 0.9em; margin: 2%;}
         
         /* Aside : "Les plus populaires" */
         aside {flex-direction: column; width: 96%; height: auto; padding: 20px;}
-        aside article {width: 95%; height: 250px; margin: 0px 20px 30px 20px;}
+        aside article {width: 95%; height: 250px; margin: 0px 20px 30px 13px;}
         .images2 {width: 70% ; height: 100%;}
         .overlay2 {width: 30%; height: 100%;}
         .overlay2 p {font-size: 1.1em; margin: 8%;}
 
-    /* Main */
+    /* Main "Activités à Marseilles" */
 
-    main {width: 90%; height: 900px; margin: 30px;}
+    main {width: 90%; height: 900px; margin: 33px;}
     #activites {width: 100%; height: 45%; flex-flow: wrap; justify-content: space-between;}
-    #activites article {width: 30%; height: 100%; margin-bottom: 5%;}
+    #activites article {width: 31%; height: 100%; margin-bottom: 5%;}
     .cover3 {width: 100%; height: 100%;}
     .overlay3 {width: 100%; height: 15%; padding: 0;}
-    .overlay3 p {font-size: 1.2em; margin: 5%;}
+    .overlay3 p {font-size: 1.1em; margin: 5%;}
 
     /* Footer */
 
-    footer {width: 100%;}
+    footer {width: 100%; height: 150px; margin-bottom: 40px;}
     #contact {width: 95%;}
-    .liens {text-align: center; font-size: 1em;}
+    .liens {text-align: center; font-size: 1em; font-size: 0.9em;}
 }
 
-/* Propriétés responsive si la fenêtre fait au plus 768px - Smartphones */
+/* Propriétés responsive si la fenêtre fait entre 375px et 767px - Smartphones */
 
-@media screen and (max-width : 768px) {
+@media screen and (min-width : 375px) and (max-width : 767px) {
 
     /* Eléments généraux de la page */
     body {width: 100%; margin: auto;}
@@ -458,7 +459,7 @@ footer li {
     section {display: flex ; flex-direction: column-reverse; width: 100%; height: auto; margin: 0;}
 
         /* Container : "Hébergements à Marseille" */
-        #container {width: auto; height: auto; background: none;}
+        #container {width: auto; height: auto; background: none; margin: 0;}
         #hebergements {width: 100% ; flex-direction: column;}
         #container article {width:98%; height: 180px; margin: 0 0 15px 0; box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12);}
         .images1 {width: 100% ; height: 65%; border-radius: 10px 10px 0 0;}
@@ -466,26 +467,28 @@ footer li {
         .overlay1 p {font-size: 0.9em; margin: 2%;} 
 
         /* Aside : "Les plus populaires" */
-        aside {flex-direction: column; width: auto; height: auto; padding: 10px 20px}
+        aside {flex-direction: column; width: auto; height: auto; padding: 10px 20px; border-radius: 0;}
         aside article {width: 98%; height: 145px; margin: 0 0 15px 0;}
         .images2 {width: 40% ; height: 100%;}
         .overlay2 {width: 60%; height: 100%; padding: 0px 20px 0 10px;}
         .overlay2 p {font-size: 0.9em; margin: 4%;}
 
-    /* Main */
+    /* Main "Activités à Marseilles" */
 
-    main {flex-direction: column; width: 100%; height: auto; margin: 0;}
-    #activites {width: 100%;}
-    #activites article {width: 96%; height: 145px; margin: 0 10px 20px 10px;}
+    main {flex-direction: column; width: 100%; height: 1330px; margin: 0;}
+    main h3 {padding-left: 20px; margin: 10px 0 20px 0}
+    #activites {flex-flow: column; width: 100%; padding: 10px;}
+    #activites article {width: 90%; height: 190px; margin: 0 10px 20px 10px;}
     .overlay3 {width: 100%; height: 25%; padding: 0;}
-    .overlay3 p {font-size: 1em; margin: 2% 5%;}
+    .overlay3 p {font-size: 1.1em; margin: 4% 5%;}
     .cover3 {width: 100%; height: 80%;}
 
     /* Footer */
 
-    footer {width: 100%;}
-    #contact {width: 95%;}
-    .liens {text-align: center; font-size: 0.7em;}
+    footer {width: 100%; height: 400px; margin-bottom: 0;}
+    #contact {flex-direction: column; width: 95%;}
+    footer li {line-height: 1.8;}
+    .liens {text-align: left; width: 90%; font-size: 1em;}
 
 }
 
