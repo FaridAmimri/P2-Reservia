@@ -24,6 +24,9 @@ i.fas.fa-star {
 #star-disable {
     color: var(--greycolor);
 }
+article:hover {
+    opacity: .5;
+}
 
 /* Header */
 
@@ -373,7 +376,7 @@ footer li {
 
 /* Propriétés responsive si la fenêtre fait entre 768px et 1024px - Tablettes */
 
-@media screen and (min-width : 768px) and (max-width : 1024px) {
+@media screen and (max-width : 1024px) {
 
     /* Eléments généraux de la page */
     body {width: 100%; margin: auto;}
@@ -381,7 +384,8 @@ footer li {
         
     /* Header */
     header {width: 90%;}
-    nav {width: 92%; font-size: 1.3em;}
+    header #inscription {margin: 19px 0px 20px 40px;}
+    nav {font-size: 1.3em;}
     
     /* Form */
     form {width: 90%; margin: 2px 30px;}
@@ -410,7 +414,7 @@ footer li {
 
     /* Main "Activités à Marseilles" */
 
-    main {width: 90%; height: 900px; margin: 33px;}
+    main {width: 90%; height: 900px; margin: 35px;}
     #activites {width: 100%; height: 45%; flex-flow: wrap; justify-content: space-between;}
     #activites article {width: 31%; height: 100%; margin-bottom: 5%;}
     .cover3 {width: 100%; height: 100%;}
@@ -424,9 +428,9 @@ footer li {
     .liens {text-align: center; font-size: 1em; font-size: 0.9em;}
 }
 
-/* Propriétés responsive si la fenêtre fait entre 375px et 767px - Smartphones */
+/* Propriétés responsive si la fenêtre fait au maximum 767px - Smartphones */
 
-@media screen and (min-width : 375px) and (max-width : 767px) {
+@media screen and (max-width : 767px) {
 
     /* Eléments généraux de la page */
     body {width: 100%; margin: auto;}
@@ -434,21 +438,21 @@ footer li {
 
      /* Header */
 
-    header {width: auto; margin: 20px;}
-    #inscription {margin: 15px 0px 20px 40px;}
-    nav {position: absolute; align-content: space-between; width: 92%; top: 10%; font-size: 1.2em; border-bottom: 3px solid var(--greycolor); }
+    header {width: auto;}
+    nav {position: absolute; align-content: space-between; width: 100%; top: 68px; left: 0; font-size: 1.2em; border-bottom: 3px solid var(--greycolor); }
     nav li {width: 50%; margin-bottom: 10px;}
     nav a:hover {color:var(--bluecolor); border-top: none;}
     
      /* Form */
     
-    form {width: 100%; height:auto; margin: 20px; padding-top: 1px;}
+    form {width: auto; height:auto; padding-top: 1px;}
     form h3 {width: 80%; margin: 45px 0 0 0;}
     form p {width: 90%;}
+    #localisation {width: 100%; font-size: 1.2em;}
     #localisation i {padding: 18px;}
-    #localisation input {width: 235px; font-size: 1.1em; padding: 9px 0 9px 14px}
+    #localisation input {width: 70%; font-size: 0.9em; padding: 9px 0 9px 14px}
     #localisation button {display: none; color:var(--bluecolor);}
-    #localisation #search {background: var(--bluecolor); color: white; border-radius: 10px; padding: 17px; position: absolute; left: 300px;}
+    #localisation #search {background: var(--bluecolor); color: white; border-radius: 10px; padding: 17px;}
     i.fas.fa-search {display:table;}
     #filtres {height: auto; flex-wrap: wrap;}
     #filtres h3 {margin: 10px 0; font-size: 1.2em;}
@@ -476,10 +480,10 @@ footer li {
 
     /* Main "Activités à Marseilles" */
 
-    main {flex-direction: column; width: 100%; height: 1330px; margin: 0;}
+    main {flex-direction: column; width: 100%; height: 1450px; margin: 0;}
     main h3 {padding-left: 20px; margin: 10px 0 20px 0}
-    #activites {flex-flow: column; width: 100%; padding: 10px;}
-    #activites article {width: 90%; height: 190px; margin: 0 10px 20px 10px;}
+    #activites {flex-flow: column; width: 100%;}
+    #activites article {width: 90%; height: 190px; margin: 20px;}
     .overlay3 {width: 100%; height: 25%; padding: 0;}
     .overlay3 p {font-size: 1.1em; margin: 4% 5%;}
     .cover3 {width: 100%; height: 80%;}
