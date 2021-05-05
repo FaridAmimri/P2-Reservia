@@ -12,20 +12,22 @@ body {
 ul {
     list-style-type: none;
     display: flex;
-    font-size: 1.4em;
 }
 h3 {
     font-weight: 1200px;
     font-size: 1.3em;
 }
+h5 {
+    margin: 0;
+    font-size: 0.9em;
+}
+i.disable.fas.fa-star{
+    color: var(--greycolor);
+}
 i.fas.fa-star {
     letter-spacing: -5px;
 }
-#star-disable {
-    color: var(--greycolor);
-}
 article {
-    cursor: pointer;
     display: block;
 }
 article:hover {
@@ -44,9 +46,11 @@ header h3 {
 }
 #logo {
     width: 100%;
+    padding-top: 20px;
 }
 #inscription {
-    margin: 20px 0px 20px 40px;
+    margin: 20px 0px 20px 25px;
+    padding-top: 20px;
     list-style-type: none;
     order: 3;
 }
@@ -62,21 +66,28 @@ nav {
     font-weight: bold;
     font-size: 1.3em;
 }
+nav ul {
+    position: relative
+}
 nav li {
     align-items: space-between;
     list-style-type: none;
-    margin-left: 40px
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 nav a {
     display: flex;
     font-size: 0.8em;
     color: #181818;
     text-decoration: none;
-    padding-top: 20px;
 }
-nav a:hover {
+.active {
     color:var(--bluecolor);
     border-top: 1px solid var(--bluecolor);
+}
+.active a {
+    color:var(--bluecolor);
 }
 
 /* Form */
@@ -103,12 +114,15 @@ form {
 #localisation button {
     width: 120px;
     background: var(--bluecolor);
-    color: white;
     border-radius: 0 10px 10px 0;
-    padding: 9px;
+    padding: 3px;
     border-style: none;
     font-size: 1em;
     width: 10%;
+    color: white;
+}
+#localisation #search {
+    display: none;
 }
 #filtres {
     display: flex;
@@ -157,7 +171,6 @@ p i{
     margin-right: 5px;
     color: var(--bluecolor);
 }
-i.fas.fa-search {display:none;}
 
 /* Section & Aside */
 
@@ -203,11 +216,11 @@ section {
         height: 35%;
         width: 100%;
         bottom: 0;
-        padding: 0px 8px;
+        padding: 5px 8px;
         box-sizing: border-box;
     }
     .overlay1 p {
-        margin: 4% 0;
+        margin: 0;
     }
 
     /* Aside : "Les plus populaires" */
@@ -244,11 +257,11 @@ section {
         width: 60%;
         bottom: 0;
         right: 0;
-        padding: 0px 30px 0 9px;
+        padding: 10px;
         box-sizing: border-box;
     }
     .overlay2 p {
-        margin: 5%;
+        margin: 0;
     }
 
 /* Main "Activités à Marseilles" */
@@ -338,13 +351,9 @@ main {
     height: 40px;
     width: 100%;
     bottom: 0;
-    padding: 0 0 10px 8px;
+    padding: 10px;
     border-radius: 0 0 8px 10px;
     box-sizing: border-box;
-}
-.overlay3 p {
-    font-size: 1.2em;
-    margin: 3%;
 }
 
 /* Footer */
@@ -371,7 +380,6 @@ footer ul {
 footer li {
     list-style-type: none;
     margin: 0 0 0 30px;
-    font-size: 0.7em;
     line-height: 1.7;
 }
 .liens {
@@ -384,53 +392,154 @@ footer li {
 @media screen and (max-width : 1024px) {
 
     /* Eléments généraux de la page */
-    body {width: 100%; margin: auto;}
-    h3 {font-size: 1.2em;}
+    body {
+        width: 100%; 
+        margin: auto;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    h5 {
+        font-size: 1em;
+    }
         
     /* Header */
-    header {width: 90%;}
-    header #inscription {margin: 19px 0px 20px 40px;}
-    nav {font-size: 1.3em;}
+    header {
+        width: 90%;
+    }
+    header #inscription {
+        margin: 20px 0px 20px 25px;
+    }
+    nav {
+        font-size: 1.3em;
+    }
     
     /* Form */
-    form {width: 90%; margin: 2px 30px;}
-    #filtres {flex-wrap: wrap;}
-    #filtres button { margin: 0 20px 10px 0;}
-    #localisation input {width: 30%;}
-    #localisation button {width: 20%;}
+    form {
+        width: 90%; 
+        margin: 2px 30px;
+    }
+    #filtres {
+        flex-wrap: wrap;
+    }
+    #filtres button { 
+        margin: 0 20px 10px 0;
+    }
+    #localisation input {
+        width: 30%;
+    }
+    #localisation button {
+        width: 20%; 
+        color: white;
+    }
+    #localisation #search {
+        display: none;
+    }
 
     /* Section */
-    section {display: inline-block; width: auto; height: auto;}
+    section {
+        display: inline-block; 
+        width: auto; 
+        height: auto;
+    }
 
         /* Container : "Hébergements à Marseille" */
-        #container {width: 96%; height: auto; margin: 0 0 30px 0; padding: 10px 20px;}
-        #hebergements {width: 100% ; flex-wrap: wrap; justify-content: space-between;}
-        #container article {width: 43%; height: 230px; border-radius: 10px; margin: 15px;}
-        .images1 {width: 100% ; height: 75%; border-radius: 10px 10px 0 0;}
-        .overlay1 {width: 100%; height: 25%;}
-        .overlay1 p {font-size: 0.9em; margin: 2%;}
+        #container {
+            width: 96%; 
+            height: auto; 
+            margin: 0 0 30px 0; 
+            padding: 10px 20px;
+        }
+        #hebergements {
+            width: 100% ; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
+        #container article {
+            width: 43%; 
+            height: 230px; 
+            border-radius: 10px; 
+            margin: 15px;
+        }
+        .images1 {
+            width: 100% ; 
+            height: 75%; 
+            border-radius: 10px 10px 0 0;
+        }
+        .overlay1 {
+            width: 100%; 
+            height: 25%;
+        }
+        .overlay1 p {
+            font-size: 0.9em;
+        }
         
         /* Aside : "Les plus populaires" */
-        aside {flex-direction: column; width: 96%; height: auto; padding: 20px;}
-        aside article {width: 95%; height: 250px;}
-        .images2 {width: 70% ; height: 100%;}
-        .overlay2 {width: 30%; height: 100%;}
-        .overlay2 p {font-size: 1.1em; margin: 8%;}
+        aside {
+            flex-direction: column; 
+            width: 96%; 
+            height: auto; 
+            padding: 20px;
+        }
+        aside article {
+            width: 95%; 
+            height: 250px;
+        }
+        .images2 {
+            width: 70% ; 
+            height: 100%;
+        }
+        .overlay2 {
+            width: 30%; 
+            height: 100%;
+        }
+        .overlay2 p {
+            font-size: 1.1em;
+        }
 
     /* Main "Activités à Marseilles" */
 
-    main {width: auto; height: 900px;}
-    #activites {width: 100%; height: 45%; flex-flow: wrap; justify-content: space-between;}
-    #activites article {width: 31%; height: 100%; margin-bottom: 5%;}
-    .cover3 {width: 100%; height: 100%;}
-    .overlay3 {width: 100%; height: 15%; padding: 0;}
-    .overlay3 p {font-size: 1.1em; margin: 5%;}
+    main {
+        width: auto; 
+        height: 900px;
+    }
+    #activites {
+        width: 100%; 
+        height: 45%; 
+        flex-flow: wrap; 
+        justify-content: space-between;
+    }
+    #activites article {
+        width: 31%; 
+        height: 100%; 
+        margin-bottom: 5%;
+    }
+    .cover3 {
+        width: 100%; 
+        height: 100%;
+    }
+    .overlay3 {
+        width: 100%; 
+        height: 15%; 
+        padding: 7%;
+    }
 
     /* Footer */
 
-    footer {width: 100%; height: 150px; margin-bottom: 40px;}
-    #contact {width: 95%;}
-    .liens {text-align: center; font-size: 1em; font-size: 0.9em;}
+    footer {
+        width: 100%; 
+        height: 160px; 
+        margin-bottom: 40px;
+    }
+    footer h4 {
+        font-size: 1em;
+    }
+    footer li {
+        font-size: 0.9em;
+    }
+    #contact {
+        width: 95%;
+    }
 }
 
 /* Propriétés responsive si la fenêtre fait au maximum 767px - Smartphones */
@@ -438,67 +547,219 @@ footer li {
 @media screen and (max-width : 767px) {
 
     /* Eléments généraux de la page */
-    body {width: 100%; margin: auto;}
-    h3 {font-size: 1.2em;}
+    body {
+        width: 100%; 
+        margin: auto;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    h5 {
+        font-size: 1em;
+    }
 
      /* Header */
 
-    header {width: auto;}
-    nav {position: absolute; align-content: space-between; width: 100%; top: 68px; left: 0; font-size: 1.2em; border-bottom: 3px solid var(--greycolor); }
-    nav li {width: 50%; margin-bottom: 10px; margin-left: 15%;}
-    nav a:hover {color:var(--bluecolor); border-top: none;}
+    header {
+        width: auto;
+    }
+    #inscription {
+        padding-top: 15px;
+    }
+    nav {
+        position: absolute; 
+        align-content: space-between; 
+        width: 100%; 
+        top: 68px; 
+        left: 0; 
+        font-size: 1.2em;
+    }
+    nav ul {
+        width: 100%; 
+        padding: 0;
+    }
+    nav li {
+        width: 50%; 
+        padding-bottom: 15px; 
+        display: flex; 
+        justify-content: center; 
+        border-bottom: 2px solid var(--greycolor);
+    }
+    .active {
+        color:var(--bluecolor); 
+        border-bottom: 2px solid var(--bluecolor); 
+        border-top: none;
+    }
     
      /* Form */
     
-    form {width: auto; height:auto; padding-top: 1px;}
-    form h3 {width: 80%; margin: 45px 0 0 0;}
-    form p {width: 90%;}
-    #localisation {width: 100%; font-size: 1.2em;}
-    #localisation i {padding: 18px;}
-    #localisation input {width: 70%; font-size: 0.9em; padding: 9px 0 9px 14px}
-    #localisation button {display: none; color:var(--bluecolor);}
-    #localisation #search {background: var(--bluecolor); color: white; border-radius: 10px; padding: 17px;}
-    i.fas.fa-search {display:table;}
-    #filtres {height: auto; flex-wrap: wrap;}
-    #filtres h3 {margin: 10px 0; font-size: 1.2em;}
-    #filtres button {margin: 10px 5px 0 0;}
+    form {
+        width: auto; 
+        height:auto; 
+        padding-top: 1px;
+    }
+    form h3 {
+        width: 80%; 
+        margin: 45px 0 0 0;
+    }
+    form p {
+        width: 90%;
+    }
+    #localisation {
+        width: 100%; 
+        font-size: 1.2em;
+    }
+    #localisation i {
+        padding: 18px;
+    }
+    #localisation input {
+        width: 70%; 
+        font-size: 0.9em; 
+        padding: 9px 0 9px 14px;
+    }
+    #localisation button {
+        color:white; 
+        display: none;
+    }
+    #localisation #search {
+        display: table; 
+        background-color: var(--bluecolor); 
+        color: white; 
+        border-radius: 10px; 
+        padding: 18px;
+    }
+    #filtres {
+        height: auto; 
+        flex-wrap: wrap;
+    }
+    #filtres h3 {
+        margin: 10px 0; 
+        font-size: 1.2em;
+    }
+    #filtres button {
+        margin: 10px 5px 0 0;
+    }
     
 
     /* Section */
 
-    section {display: flex ; flex-direction: column-reverse; width: 100%; height: auto; margin: 0;}
+    section {
+        display: flex ; 
+        flex-direction: column-reverse; 
+        width: 100%; 
+        height: auto; 
+        margin: 0;
+    }
 
         /* Container : "Hébergements à Marseille" */
-        #container {width: auto; height: auto; background: none; margin: 0;}
-        #hebergements {width: 100% ; flex-direction: column;}
-        #container article {width: auto; height: 180px; margin: 0 0 15px 0; box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12);}
-        .images1 {width: 100% ; height: 65%; border-radius: 10px 10px 0 0;}
-        .overlay1 {width: 100%; height: 35%;}
-        .overlay1 p {font-size: 0.9em; margin: 2%;} 
+        #container {
+            width: auto; 
+            height: auto; 
+            background: none; 
+            margin: 0;
+        }
+        #hebergements {
+            width: 100% ; 
+            flex-direction: column;
+        }
+        #container article {
+            width: auto; 
+            height: 180px; 
+            margin: 0 0 15px 0; 
+            box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12); -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.12);
+        }
+        .images1 {
+            width: 100% ; 
+            height: 65%; 
+            border-radius: 10px 10px 0 0;
+        }
+        .overlay1 {
+            width: 100%; 
+            height: 35%;
+        }
+        .overlay1 p {
+            font-size: 0.9em;
+        } 
 
         /* Aside : "Les plus populaires" */
-        aside {flex-direction: column; width: auto; height: auto; padding: 10px 20px; border-radius: 0;}
-        aside article {width: auto; height: 145px;}
-        .images2 {width: 40% ; height: 100%;}
-        .overlay2 {width: 60%; height: 100%; padding: 0px 20px 0 10px;}
-        .overlay2 p {font-size: 1em; margin: 4%;}
+        aside {
+            flex-direction: column; 
+            width: auto; 
+            height: auto; 
+            padding: 10px 20px; 
+            border-radius: 0;
+        }
+        aside article {
+            width: auto; 
+            height: 145px;
+        }
+        .images2 {
+            width: 40% ; 
+            height: 100%;
+        }
+        .overlay2 {
+            width: 60%; 
+            height: 100%; 
+            padding: 10px;
+        }
+        .overlay2 p {
+            font-size: 1em;
+        }
 
     /* Main "Activités à Marseilles" */
 
-    main {flex-direction: column; width: auto; height: auto; margin: 0;}
-    main h3 {padding-left: 20px; margin: 10px 0 20px 0}
-    #activites {flex-flow: column; width: auto; height: auto; padding: 10px 20px;}
-    #activites article {width: auto; height: 190px;}
-    .overlay3 {width: 100%; height: 25%; padding: 0;}
-    .overlay3 p {font-size: 1.1em; margin: 4% 5%;}
-    .cover3 {width: 100%; height: 80%;}
+    main {
+        flex-direction: column; 
+        width: auto; 
+        height: auto; 
+        margin: 0;
+    }
+    main h3 {
+        padding-left: 20px;
+        margin: 10px 0 20px 0;
+    }
+    #activites {
+        flex-flow: column; 
+        width: auto; 
+        height: auto; 
+        padding: 10px 20px;
+    }
+    #activites article {
+        width: auto; 
+        height: 190px;
+    }
+    .overlay3 {
+        width: 100%; 
+        height: 25%; 
+        padding: 5%;
+    }
+    .cover3 {
+        width: 100%; 
+        height: 80%;
+    }
 
     /* Footer */
 
-    footer {width: 100%; height: 400px; margin-bottom: 0;}
-    #contact {flex-direction: column; width: 95%;}
-    footer li {line-height: 1.8;}
-    .liens {text-align: left; width: 90%; font-size: 1em;}
+    footer {
+        width: 100%; 
+        height: 440px; 
+        margin-bottom: 0;
+    }
+    footer h4 {
+        font-size: 0.9em;
+    }
+    #contact {
+        flex-direction: column; 
+        width: 95%;
+    }
+    footer li {
+        line-height: 1.8;
+    }
+    .liens {
+        text-align: left; 
+        width: 90%; 
+        font-size: 1.3em;
+    }
 
 }
 
